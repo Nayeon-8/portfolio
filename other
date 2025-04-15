@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design</title>
+    <link rel="stylesheet" href="uiux-styles.css">
+    <script defer src="uiux-script.js"></script>
+</head>
+<body>
+    
+
+    <!-- 왼쪽 고정 메뉴 -->
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <a href="#love, bonito" class="menu-item active" data-target="love, bonito">ILLUSTRATION</a>
+                <a href="#BAYBEATS" class="menu-item" data-target="BAYBEATS">BAYBEATS</a>
+                <a href="#BAG DESIGN" class="menu-item" data-target="BAG DESIGN">BAG DESIGN</a>
+                <a href="#HYUNDAI" class="menu-item" data-target="HYUNDAI">HYUNDAI</a>
+                <a href="#CONVERSE" class="menu-item" data-target="CONVERSE">CONVERSE</a>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- 메인 컨텐츠 -->
+    <main>
+        
+        <section id="foodhood" class="content-section active">
+            <h1>FOODHOOD</h1>
+            <p>Home-based Food Communication App</p>
+            <div class="image-placeholder"></div>
+        </section>
+
+        <section id="grabtaxi" class="content-section">
+            <h1>GRABTAXI</h1>
+            <p>Taxi Booking Service</p>
+            <div class="image-placeholder"></div>
+        </section>
+
+        <section id="trashtalk" class="content-section">
+            <h1>TRASHTALK</h1>
+            <p>Environmental Awareness Campaign</p>
+            <div class="image-placeholder"></div>
+        </section>
+
+        <section id="artmuseum" class="content-section">
+            <h1>ART MUSEUM</h1>
+            <p>VR Interactive Exhibition</p>
+            <div class="image-placeholder"></div>
+        </section>
+
+        <section id="ocbccard" class="content-section">
+            <h1>OCBC CARD</h1>
+            <p>Banking UI/UX Project</p>
+            <div class="image-placeholder"></div>
+        </section>
+
+    </main>
+
+
+</body>
+</html>

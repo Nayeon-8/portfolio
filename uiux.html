@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI UX Design</title>
+    <link rel="stylesheet" href="uiux-styles.css">
+    <script defer src="uiux-script.js"></script>
+    <style>
+
+      
+        /* Additional styles for projects layout */
+ 
+
+        .projects-container {
+            padding: 100px;
+            max-width: 1400px;
+            margin: 0 auto;
+            
+        }
+
+        html, body {
+            height: 100%;
+            overflow-y: auto;  /* 또는 scroll */
+}
+        
+        .projects-heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            transform: translateY(-80px);
+            
+
+        }
+        
+        .featured-section {
+            margin-bottom: 0px;
+        }
+        
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 50px;
+        }
+        
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-date {
+            font-size: 0.7rem;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+        
+        .project-description {
+            font-size: 0.7rem;
+            line-height: 1.5;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .tag {
+            padding: 5px 10px;
+            background-color: #0800ff;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+
+        <nav class="navbar">
+            <div class="left-menu">
+              <div class="info-cv">
+
+              </div>
+            </div>
+            <a href="home.html">NAYEON<br>KO ★</a>
+            <a href="info.html" >INFO</a>
+            <a href="cv.html" onclick="loadCV()">CV</a>
+        </nav>
+
+        <nav>
+            
+           
+            <a href="uiux.html" >UI / UX DESIGN</a>
+            <a href="graphic.html" >GRAPHIC DESIGN</a>
+            <a href="other.html" >OTHER WORK</a>
+        </nav>
+        <button id="modeToggle" aria-label="Toggle Dark Mode"></button>
+        
+    </header>
+
+    
+    <!-- Main content area -->
+    <div class="main-content">
+        <div class="projects-container">
+            <h1 class="projects-heading">Projects</h1>
+            
+            
+            <div class="featured-section">
+                <h2 class="section-title">FEATURED</h2>
+                
+                <nav class="projects-grid">
+                    <!-- Project 1: foodhood -->
+                    <a href="projects/foodhood.html" class="project-card-link">
+                        <div class="project-card"> 
+                            <div class="project-date">FEBRUARY 2025</div>
+                            <img src="foodhood-thumbnail.gif" alt="Foodhood Project" class="project-image">
+                            <h3 class="project-title">Foodhood</h3>
+                            <p class="project-description">
+                                Experience a visual spectacle where photographs transform into pixelated particles, visualizing the deconstruction and reassembly of memories.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">WebGL</span>
+                                <span class="tag">Shader</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- Project 2: Hangul meets AI -->
+                    <div class="project-card">
+                        <div class="project-date">OCTOBER 2023</div>
+                        <img src="hangul-thumbnail.jpg" alt="Hangul meets AI" class="project-image">
+                        <h3 class="project-title">Grab Taxi redesign</h3>
+                        <p class="project-description">
+                            blabal
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">WebGL</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: Leon Sans -->
+                    <div class="project-card">
+                        <div class="project-date">AUGUST 2019</div>
+                        <img src="leon-sans-thumbnail.jpg" alt="Leon Sans" class="project-image">
+                        <h3 class="project-title">Dreamcatcher</h3>
+                        <p class="project-description">
+                            Leon Sans is a geometric sans-serif typeface with dynamic font weight and custom animations, effects, or shapes within HTML5 Canvas element, designed by Jongmin Kim to celebrate the birth of his newborn baby, Leon.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">WebGL</span>
+                            <span class="tag">Font Design</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4: Form Follows Function -->
+                    <div class="project-card">
+                        <div class="project-date">JANUARY 2013</div>
+                        <img src="form-follows-function-thumbnail.jpg" alt="Form Follows Function" class="project-image">
+                        <h3 class="project-title">Ocbc card app</h3>
+                        <p class="project-description">
+                            Form Follows Function is a collection of interactive experiences using HTML5 for compatibility and optimal performance on all devices, pushing the boundaries of what's possible within a browser-based experience.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">UX/UI Design</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-date">AUGUST 2019</div>
+                        <img src="leon-sans-thumbnail.jpg" alt="Leon Sans" class="project-image">
+                        <h3 class="project-title">Dreamcatcher</h3>
+                        <p class="project-description">
+                            Leon Sans is a geometric sans-serif typeface with dynamic font weight and custom animations, effects, or shapes within HTML5 Canvas element, designed by Jongmin Kim to celebrate the birth of his newborn baby, Leon.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">WebGL</span>
+                            <span class="tag">Font Design</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-date">AUGUST 2019</div>
+                        <img src="leon-sans-thumbnail.jpg" alt="Leon Sans" class="project-image">
+                        <h3 class="project-title">Dreamcatcher</h3>
+                        <p class="project-description">
+                            Leon Sans is a geometric sans-serif typeface with dynamic font weight and custom animations, effects, or shapes within HTML5 Canvas element, designed by Jongmin Kim to celebrate the birth of his newborn baby, Leon.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">WebGL</span>
+                            <span class="tag">Font Design</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-date">AUGUST 2019</div>
+                        <img src="leon-sans-thumbnail.jpg" alt="Leon Sans" class="project-image">
+                        <h3 class="project-title">Dreamcatcher</h3>
+                        <p class="project-description">
+                            Leon Sans is a geometric sans-serif typeface with dynamic font weight and custom animations, effects, or shapes within HTML5 Canvas element, designed by Jongmin Kim to celebrate the birth of his newborn baby, Leon.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">WebGL</span>
+                            <span class="tag">Font Design</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-date">AUGUST 2019</div>
+                        <img src="leon-sans-thumbnail.jpg" alt="Leon Sans" class="project-image">
+                        <h3 class="project-title">Dreamcatcher</h3>
+                        <p class="project-description">
+                            Leon Sans is a geometric sans-serif typeface with dynamic font weight and custom animations, effects, or shapes within HTML5 Canvas element, designed by Jongmin Kim to celebrate the birth of his newborn baby, Leon.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">WebGL</span>
+                            <span class="tag">Font Design</span>
+                        </div>
+                    </div>
+                    
+                </nav>
+              
+            </div>
+
+                    
+                    <!-- Add more of your projects here -->
+                    
+
+                    <!-- Continue with remaining projects -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 모든 메뉴 항목을 가져옵니다.
+        const menuItems = document.querySelectorAll('.menu-item');
+        
+        // 각 메뉴 항목에 클릭 이벤트를 추가합니다.
+        menuItems.forEach(item => {
+            item.addEventListener('click', function(event) {
+                event.preventDefault(); // 기본 동작을 막습니다.
+
+                // 모든 섹션을 숨깁니다.
+                const sections = document.querySelectorAll('.content-section');
+                sections.forEach(section => section.classList.remove('active'));
+
+                // 클릭된 메뉴에 맞는 섹션을 표시합니다.
+                const targetSectionId = item.getAttribute('href').substring(1); // '#cv'에서 'cv'만 추출
+                const targetSection = document.getElementById(targetSectionId);
+                targetSection.classList.add('active');
+
+                // 메뉴 항목의 활성화 상태를 업데이트합니다.
+                menuItems.forEach(menu => menu.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
